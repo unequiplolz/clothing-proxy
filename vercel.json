@@ -1,6 +1,9 @@
 {
   "version": 2,
+  "builds": [
+    { "src": "api/clothing.js", "use": "@vercel/node" }
+  ],
   "routes": [
-    { "src": "/api/clothing", "dest": "/api/clothing.ts" }
+    { "src": "/api/clothing", "dest": "/api/clothing.js" }
   ]
 }
